@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google - II</title>
+    <style>
+        *
+        {
+            margin:0px;
+            padding: 0px;
+        }
+        .head
+        {
+            text-align: center;
+            font-size: 20px;
+            font-family: monospace;
+        }
+
+        .search
+        {
+            text-align: center;
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            column-gap: 10px;
+        }
+
+        .search > input
+        {
+            width: 50%;
+            height: 30px;
+            padding:18px;
+            box-sizing: border-box;
+        }
+
+        .search > button
+        {
+            width: 20%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width:90%;
+            margin: auto;
+            font-family: monospace;
+        }
+        .container > div
+        {
+            width: 100%;
+            min-height: 40px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 5%;
+
+        }
+
+        .container > div > div
+        {
+           margin: 2% 2%;
+        }
+        .container > div > div > .span
+        {
+            display: flex;
+            column-gap: 2%;
+        }
+
+        .container > div > div > .span > span
+        {
+            background-color: rgb(190, 185, 185);
+            padding: 2%;
+            margin-top: 10%;
+            color: white;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        #btns
+        {
+          text-align: center;
+          margin-top: 5%;
+          margin-bottom: 5%;
+        }
+        #btns > button
+        {
+            background-color: blue;
+            width: 30px;
+            height: 30px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <input type="text" placeholder="Enter news keywords" id="search">
+        <button onclick="mySearch()">Search</button>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <div class="container" id="cont"></div>
+</body>
+<script src="google.js"></script>
+</html>
